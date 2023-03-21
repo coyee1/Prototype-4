@@ -20,10 +20,6 @@ public class SpawnManager : MonoBehaviour
     void Update()
     {
         enemyCount = FindObjectsOfType<Enemy>().Length; 
-        if(transform.position.y <-10)
-        {
-            Destroy(gameObject);
-        }
 
             if(enemyCount == 0)
             {
